@@ -7,14 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Munamii Cakery</title>
 </head>
+<script>
+function openMenu() {
+  document.getElementById("mobileMenu").style.display = "flex";
+}
+
+function closeMenu() {
+  document.getElementById("mobileMenu").style.display = "none";
+}
+</script>
+
 <body>
+
+<div class="header">
+  <div class="left-nav">
+    <div class="hamburger" onclick="openMenu()">☰</div>
+
     <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="products.html">Store</a>
-    <a href="about.html">About</a>
-   <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Store</a>
+      <a href="about.html">About</a>
     </nav>
-    <h2>Munamii cakery</h2>
+  </div>
+
+  <h2 class="logo">Munamii cakery</h2>
+
+<div class="right-nav">
+  <a href="contact.html" class="find-us-text">Find us</a>
+  <a href="contact.html" class="find-us-icon">📍</a>
+</div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close" onclick="closeMenu()">✕</div>
+
+  <a href="index.html">Home</a>
+  <a href="products.html">Store</a>
+  <a href="about.html">About</a>
+</div>
     <p>Home delivery service: All the city of Stockholm (redacted) and Malmo (redacted) with 
 additional cost. 
 Place to pick up order: Via la Costa Avenue. Blue Port gated neighbourhood. We will 
@@ -25,19 +55,28 @@ Tuesday to Saturday
 <footer>
   <div class="footer-row">
     <div class="footer-column">
-      <a href="https://instagram.com">Instagram</a>
+      <a href="https://www.instagram.com/munamii.cakery/">Instagram</a>
     </div>
 
     <div class="footer-column">
-      <a href="https://facebook.com">Facebook</a>
+      <a href="https://www.facebook.com/munamiicupcakes">Facebook</a>
     </div>
 
     <div class="footer-column">
-      <a href="mailto:email@example.com">Email</a>
+      <a href="mailto:infomunamii@gmail.com">Email</a>
     </div>
   </div>
 
   <p class="footer-copy">© Munamii Cakery</p>
 </footer>
+<script>
+function openMenu() {
+  document.getElementById("mobileMenu").style.display = "flex";
+}
+
+function closeMenu() {
+  document.getElementById("mobileMenu").style.display = "none";
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,191 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+nav a:link,
+nav a:visited,
+nav a:active,
+nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+nav a {
+  margin-right: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+.footer-row {
+  display: flex;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* varje kolumn */
+.footer-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* länkar */
+footer a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+.header a {
+  color: black;
+  text-decoration: none;
+}
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.header-center h2 {
+  text-align: center;
+  line-height: 1.1;
+}
+
+.sub {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop */
+.header-left nav {
+  display: flex;
+}
+
+/* hamburgare gömd på desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* mobile menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: pink;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* stäng knapp */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* mobil */
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+
+  .top-nav,
+  .right-nav {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .top-nav {
+    display: none;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.right-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
